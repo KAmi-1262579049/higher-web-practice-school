@@ -1,13 +1,27 @@
 package ru.yandex.practicum;
 
+import java.util.Map;
+
 public class SecureDatabase {
 
     public static final String[] USERS = {
             "pooh", "piglet", "tigger", "eeyore", "kanga", "roo", "rabbit", "owl", "robin"
     };
 
+    public static final Map<String, String> USER_ICONS = Map.of(
+            "pooh", "🐻",
+            "piglet", "🐷",
+            "tigger", "🐯",
+            "eeyore", "🐴",
+            "kanga", "🦘",
+            "roo", "🐭",
+            "rabbit", "🐰",
+            "owl", "🦉",
+            "robin", "🧒"
+    );
+
     public static final String[] PASSWORDS = {
-            "1!", "2!",  "3!", "4!", "?", "5!", "6!", "7!", "*"
+            "1!", "2@",  "3#", "4$", "??", "5%", "6^", "7&", "**"
     };
 
     public static final String[] ROLES = {
@@ -27,12 +41,15 @@ public class SecureDatabase {
     };
 
     public static final String[] ACTIONS = {
-            "enter", "leave", "watch", "edit",
-            "enter:cabin",
-            "enter:room",
-            "enter:school",
-            "enter:class",
-            "watch:journal", "edit:journal"
+            "enter", "leave", "watch", "edit"
+    };
+
+    public static final String[] AREA = {
+            "school", "room", "cabin", "class"
+    };
+
+    public static final String[] DATA = {
+            "journal"
     };
 
     public static final String[][] ROLE_ACTIONS = {
